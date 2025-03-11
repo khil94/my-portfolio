@@ -1,19 +1,19 @@
 import "./App.css";
-import HomePage from "./pages/homePage.tsx";
+import HomeSection from "./sections/homeSection.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutPage from "./pages/aboutPage.tsx";
-import ProjectsPage from "./pages/projectsPage.tsx";
-import ContactPage from "./pages/contactPage.tsx";
+import AboutSection from "./sections/aboutSection.tsx";
+import ProjetsSection from "./sections/projetsSection.tsx";
+import ContactSection from "./sections/contactSection.tsx";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path={"/"} element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path={"/"} element={<HomeSection />} />
+          <Route path="/about" element={<AboutSection />} />
+          <Route path="/projects" element={<ProjetsSection />} />
+          <Route path="/contact" element={<ContactSection />} />
         </Routes>
       </BrowserRouter>
     </>
