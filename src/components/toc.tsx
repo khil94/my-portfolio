@@ -58,7 +58,7 @@ const TOC = () => {
 
   const clickHandler = (e: MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
