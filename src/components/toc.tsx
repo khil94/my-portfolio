@@ -62,12 +62,12 @@ const TOC = () => {
   };
 
   return (
-    <nav className="w-full break-all flex flex-col sticky top-1/2 p-4 text-sm">
+    <nav className="w-full break-all flex flex-col items-start sticky top-1/2 p-4 text-sm">
       <ul className="space-y-1 ">
         {toc.map(({ id, text, level }) => (
           <li
             key={id}
-            className={`${currentId === id ? "font-bold" : ""} ${levelPadding[level] || "pl-0"} `}
+            className={`${currentId === id ? "font-bold" : ""} ${levelPadding[level] || "pl-0"} text-xl`}
           >
             <a
               onClick={e => clickHandler(e, id)}

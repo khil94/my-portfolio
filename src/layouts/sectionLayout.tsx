@@ -7,14 +7,14 @@ import TOC from "../components/toc.tsx";
 export default function SectionLayout() {
   return (
     <div className={"w-full flex flex-row"}>
-      <div className={"w-[20%]"}>
-        <TOC />
-      </div>
       <div className={"w-[80%]"}>
         <HomeSection />
         <AboutSection />
         <ProjetsSection />
         <ContactSection />
+      </div>
+      <div className={"w-[20%]"}>
+        <TOC />
       </div>
     </div>
   );
