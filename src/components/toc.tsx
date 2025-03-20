@@ -13,7 +13,7 @@ const TOC = () => {
   console.log(currentId);
 
   useEffect(() => {
-    const headers = Array.from(document.querySelectorAll("h1, h2, h3")) as HTMLElement[];
+    const headers = Array.from(document.querySelectorAll("h1")) as HTMLElement[];
     const tocItems = headers.map(header => {
       let id = header.id;
       if (!id) {
