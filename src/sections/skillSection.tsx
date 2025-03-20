@@ -14,12 +14,12 @@ export default function SkillSection() {
             return <SkillComp key={`skill-comp-${v}`} name={v} />;
           })}
         </SkillCompWrapper>
-        <SkillCompWrapper title={"Have_Experience"}>
+        <SkillCompWrapper title={"Have Experience"}>
           {Have_Experience.map((v, idx) => {
             return <SkillComp key={`skill-comp-${v}`} name={v} />;
           })}
         </SkillCompWrapper>
-        <SkillCompWrapper title={"Collaboration_Tools"}>
+        <SkillCompWrapper title={"Collaboration Tools"}>
           {Collaboration_Tools.map((v, idx) => {
             return <SkillComp key={`skill-comp-${v}`} name={v} />;
           })}
