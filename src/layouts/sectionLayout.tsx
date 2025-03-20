@@ -1,6 +1,6 @@
 import AboutSection from "../sections/aboutSection.tsx";
 import SkillSection from "../sections/skillSection.tsx";
-import ProjetsSection from "../sections/projetsSection.tsx";
+import ProjectSection from "../sections/projectSection.tsx";
 import ContactSection from "../sections/contactSection.tsx";
 import TOC from "../components/toc.tsx";
 
@@ -10,7 +10,7 @@ export default function SectionLayout() {
       <div className={"w-[80%]"}>
         <AboutSection />
         <SkillSection />
-        <ProjetsSection />
+        <ProjectSection />
         <ContactSection />
       </div>
       <div className={"w-[20%]"}>
