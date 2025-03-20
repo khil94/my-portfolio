@@ -1,7 +1,12 @@
+import SectionWrapper from "../layouts/sectionWrapper.tsx";
+import { ABOUT_TEXT } from "../constants/about.ts";
+
 export default function AboutSection() {
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <h1 className="text-2xl font-bold">Welcome to my Portfolio</h1>
-    </div>
+    <SectionWrapper title={"About"}>
+      <div className="w-full flex items-center justify-center break-all">
+        <p className={`whitespace-pre-wrap`}>{ABOUT_TEXT}</p>
+      </div>
+    </SectionWrapper>
   );
 }
