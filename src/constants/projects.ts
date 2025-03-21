@@ -2,7 +2,7 @@ export interface Project {
   name: string;
   description: string;
   content: string;
-  summary?: string[];
+  summary: string[];
   thumbnail?: string;
   skills: string[];
   url?: string;
