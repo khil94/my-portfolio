@@ -1,6 +1,6 @@
 import { PROJECT_LIST } from "../constants/projects.ts";
 import ProjectComp from "./projectComp.tsx";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 export default function ProjectCompWrapper() {
   const [idx, setIdx] = useState(0);
@@ -15,14 +15,14 @@ export default function ProjectCompWrapper() {
   };
 
   return (
-    <div className={`relative`}>
+    <div className={`relative text-base/8`}>
       <div className={`relative overflow-hidden`}>
         <div
           className={`
-            transition-transform duration-500 ease-in-out flex flex-row flex-nowrap`}
+           flex flex-row transition-transform duration-500 ease-in-out`}
           style={{ transform: `translateX(-${idx * 100}%)` }}
         >
-          {PROJECT_LIST.map((v, i) => {
+          {PROJECT_LIST.map(v => {
             return <ProjectComp key={`project-${v.name}`} targetProject={v} />;
           })}
         </div>

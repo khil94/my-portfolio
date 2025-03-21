@@ -10,13 +10,13 @@ interface Prop {
 export default function ProjectComp({ targetProject }: Prop) {
   return (
     <div
-      className={`min-w-full border-2 flex flex-col justify-between gap-4 text-center border-white rounded-2xl p-4 `}
+      className={`flex-[0_0_100%] border-2 flex flex-col justify-between gap-4 text-center border-white rounded-2xl p-4 `}
     >
       <h2 className={"font-bold text-2xl"}>{targetProject.name}</h2>
       <p>{targetProject.description}</p>
       <div className={"p-4 text-left break-keep"}>
         {targetProject.summary.map(v => {
-          return <p key={v}>{`· ${v}`}</p>;
+          return <p key={v}>{`• ${v}`}</p>;
         })}
       </div>
       <div className={"flex flex-row justify-center gap-4"}>
