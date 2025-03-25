@@ -1,9 +1,10 @@
 import { Project } from "../constants/projects.ts";
-import Github from "../assets/github.svg?react";
-import Menu from "../assets/burger.svg?react";
-import Url from "../assets/web.svg?react";
+import Github from "../../public/assets/github.svg?react";
+import Menu from "../../public/assets/burger.svg?react";
+import Url from "../../public/assets/web.svg?react";
 import { useState } from "react";
 import CommonModal from "./commonModal.tsx";
+import ProjectDetail from "./projectDetail.tsx";
 
 interface Prop {
   targetProject: Project;
@@ -11,6 +12,9 @@ interface Prop {
 
 export default function ProjectComp({ targetProject }: Prop) {
   const [showModal, setShowModal] = useState(false);
+  const onClose = () => {
+    setShowModal(false);
+  };
 
   return (
     <div
@@ -38,7 +42,9 @@ export default function ProjectComp({ targetProject }: Prop) {
           </a>
         )}
       </div>
-      <CommonModal target={targetProject} isOpen={showModal} onClose={() => setShowModal(false)} />
+      <CommonModal isOpen={showModal} onClose={onClose}>
+        <ProjectDetail targetProject={targetProject} onClose={onClose} />
+      </CommonModal>
     </div>
   );
 }
