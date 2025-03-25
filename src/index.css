@@ -11,12 +11,20 @@
       --color-main-light-black: #202026;
       --color-main-black: #17171b;
       --color-main-white: #f7f7f7;
-
+      --color-modal : #00000080;
     }
+
+    scrollbar-width: none;
 
   }
 }
 
 @layer utilities{
-
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
