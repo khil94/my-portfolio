@@ -2,12 +2,16 @@ import { Project } from "../constants/projects.ts";
 import Github from "../assets/github.svg?react";
 import Menu from "../assets/burger.svg?react";
 import Url from "../assets/web.svg?react";
+import { useState } from "react";
+import CommonModal from "./commonModal.tsx";
 
 interface Prop {
   targetProject: Project;
 }
 
 export default function ProjectComp({ targetProject }: Prop) {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div
       className={`flex-[0_0_100%] border-2 flex flex-col justify-between gap-4 text-center border-white rounded-2xl p-4 `}
@@ -20,7 +24,7 @@ export default function ProjectComp({ targetProject }: Prop) {
         })}
       </div>
       <div className={"flex flex-row justify-center gap-4"}>
-        <button>
+        <button className={"cursor-pointer"} onClick={() => setShowModal(!showModal)}>
           <Menu width={40} height={40} stroke={"white"} fill={"white"} />
         </button>
         {targetProject.url && (
@@ -34,6 +38,7 @@ export default function ProjectComp({ targetProject }: Prop) {
           </a>
         )}
       </div>
+      <CommonModal target={targetProject} isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 }
