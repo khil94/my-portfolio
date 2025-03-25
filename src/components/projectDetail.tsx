@@ -66,14 +66,15 @@ export default function ProjectDetail({ targetProject, onClose }: Prop) {
         isOpen={showImageModal}
         onClose={onImageModalClose}
       >
-        <button
-          className={`absolute right-0 top-0 translate-x-1/4 -translate-y-1/4 p-4 border-2 border-white
+        <div className={"cursor-pointer"} onClick={onImageModalClose}>
+          <button
+            className={`cursor-pointer absolute right-0 top-0 translate-x-1/4 -translate-y-1/4 p-4 border-2 border-white
             bg-main-light-black text-2xl rounded-[50%]`}
-          onClick={onImageModalClose}
-        >
-          X
-        </button>
-        <img src={target} style={{ width: "100%" }} alt={"img-detail"} />
+          >
+            X
+          </button>
+          <img src={target} style={{ width: "100%" }} alt={"img-detail"} />
+        </div>
       </CommonModal>
     </>
   );
