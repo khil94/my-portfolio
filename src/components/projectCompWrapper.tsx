@@ -28,13 +28,13 @@ export default function ProjectCompWrapper() {
         </div>
       </div>
       <button
-        className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-0 p-2 px-4 bg-gray-800 text-white rounded-full"
+        className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-0 p-2 px-4 border-2 border-white bg-main-light-black text-white rounded-full"
         onClick={slidePrev}
       >
         {"<"}
       </button>
       <button
-        className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 p-2 px-4 bg-gray-800 text-white rounded-full"
+        className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 p-2 px-4 border-2 border-white bg-main-light-black text-white rounded-full"
         onClick={slideNext}
       >
         {">"}
