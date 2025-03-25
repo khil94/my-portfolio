@@ -35,7 +35,7 @@ export default function ProjectDetail({ targetProject, onClose }: Prop) {
           X
         </button>
       </div>
-      <div className={"w-full px-8 text-left flex flex-col gap-8"}>
+      <div className={"w-full px-8 text-left flex flex-col gap-8 mt-4"}>
         <SkillCompWrapper title={"사용 기술"}>
           {targetProject.skills.map((skill, idx) => {
             return <SkillComp key={`skill-of-${targetProject.name}-${idx}`} name={skill} />;
