@@ -1,7 +1,7 @@
 import { Project } from "../constants/projects.ts";
-import Github from "../../public/assets/github.svg?react";
-import Menu from "../../public/assets/burger.svg?react";
-import Url from "../../public/assets/web.svg?react";
+import Github from "../assets/github.svg?react";
+import Menu from "../assets/burger.svg?react";
+import Url from "../assets/web.svg?react";
 import { useState } from "react";
 import CommonModal from "./commonModal.tsx";
 import ProjectDetail from "./projectDetail.tsx";

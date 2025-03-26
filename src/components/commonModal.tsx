@@ -6,7 +6,7 @@ interface Prop extends HTMLProps<HTMLDivElement> {
   onClose: () => void;
   children: ReactNode;
 }
-// ${visible ? "" : "hidden"}
+
 export default function CommonModal({ children, isOpen, onClose, ...rest }: Prop) {
   const { className } = rest;
 
@@ -16,7 +16,6 @@ export default function CommonModal({ children, isOpen, onClose, ...rest }: Prop
         onClose();
       }
     };
-
     if (isOpen) {
       document.body.style.overflow = "hidden"; // 모달 열릴 때 스크롤 방지
       window.addEventListener("keydown", handleKeyDown);
