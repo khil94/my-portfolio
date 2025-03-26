@@ -5,5 +5,5 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), svgr()],
-  base: "https://github.com/khil94/my-portfolio",
+  base: "https://khil94.github.io/my-portfolio/",
 });
