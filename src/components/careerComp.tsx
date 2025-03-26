@@ -27,7 +27,7 @@ export default function CareerComp({ target }: Prop) {
 
   return (
     <div className={`flex flex-col gap-4`}>
-      <div className={"text-right"}>
+      <div className={"text-left"}>
         <h3 className={"font-bold text-2xl"}>{target.name}</h3>
         <p>{`${getYYYYMMDD(target.startDate)} ~ ${target.endDate ? getYYYYMMDD(target.endDate) : ""}`}</p>
       </div>
