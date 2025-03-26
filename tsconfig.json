@@ -1,8 +1,8 @@
 {
-  "include": ["src/types"],
+  "include": [],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
 }

@@ -10,17 +10,17 @@ export default function SkillSection() {
     <SectionWrapper title={"Skill"}>
       <div className="w-full flex flex-col gap-12 items-center justify-center">
         <SkillCompWrapper title={"Experienced"}>
-          {Experienced.map((v, idx) => {
+          {Experienced.map(v => {
             return <SkillComp key={`skill-comp-${v}`} name={v} />;
           })}
         </SkillCompWrapper>
         <SkillCompWrapper title={"Have Experience"}>
-          {Have_Experience.map((v, idx) => {
+          {Have_Experience.map(v => {
             return <SkillComp key={`skill-comp-${v}`} name={v} />;
           })}
         </SkillCompWrapper>
         <SkillCompWrapper title={"Collaboration Tools"}>
-          {Collaboration_Tools.map((v, idx) => {
+          {Collaboration_Tools.map(v => {
             return <SkillComp key={`skill-comp-${v}`} name={v} />;
           })}
         </SkillCompWrapper>
