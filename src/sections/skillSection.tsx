@@ -7,7 +7,7 @@ export default function SkillSection() {
   const { Experienced, Have_Experience, Collaboration_Tools } = SKILL_LIST;
 
   return (
-    <SectionWrapper type={"right"} title={"Skill"}>
+    <SectionWrapper title={"Skill"}>
       <div className="w-full flex flex-col gap-12 items-center justify-center">
         <SkillCompWrapper title={"Experienced"}>
           {Experienced.map((v, idx) => {

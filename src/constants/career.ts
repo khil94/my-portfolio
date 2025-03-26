@@ -1,16 +1,16 @@
-interface Project {
+export interface CareerProject {
   name: string;
   description: string[];
 }
 
-interface Career {
+export interface Career {
   name: string;
   startDate: Date;
   endDate: Date | null;
-  projects: Project[];
+  projects: CareerProject[];
 }
 
-export const AIRI_PROJECTS: Project[] = [
+export const AIRI_PROJECTS: CareerProject[] = [
   {
     name: "로보어드바이저 서비스 모니터링을 위한 어드민 페이지 개발",
     description: [
@@ -54,6 +54,6 @@ export const CAREER_LIST: Career[] = [
     name: "인공지능연구원",
     startDate: new Date("2021-02-01"),
     endDate: new Date("2022-03-15"),
-    projects: [],
+    projects: AIRI_PROJECTS,
   },
 ];

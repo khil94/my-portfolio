@@ -3,7 +3,7 @@ import ProjectCompWrapper from "../components/projectCompWrapper.tsx";
 
 export default function ProjectSection() {
   return (
-    <SectionWrapper title={"Personal Project"}>
+    <SectionWrapper type={"right"} title={"Personal Project"}>
       <ProjectCompWrapper />
     </SectionWrapper>
   );

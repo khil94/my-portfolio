@@ -5,7 +5,7 @@ import Blog from "../assets/blog.svg?react";
 
 export default function ContactSection() {
   return (
-    <SectionWrapper title={"Contact"} type={"right"}>
+    <SectionWrapper title={"Contact"}>
       <div className={`flex flex-col gap-8`}>
         <a
           className={"flex flex-row gap-8 items-center"}
