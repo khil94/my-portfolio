@@ -50,6 +50,7 @@ export default function ProjectDetail({ targetProject, onClose }: Prop) {
             <Carousel targetList={targetProject.image}>
               {targetProject.image.map((v, i) => (
                 <img
+                  key={`project-img-${targetProject.name}-${i}`}
                   className={"cursor-pointer"}
                   onClick={() => handleImageClick(v)}
                   style={{ width: "100%" }}
