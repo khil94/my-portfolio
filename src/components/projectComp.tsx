@@ -24,7 +24,12 @@ export default function ProjectComp({ targetProject }: Prop) {
       <p>{targetProject.description}</p>
       <div className={"p-4 text-left break-keep"}>
         {targetProject.summary.map(v => {
-          return <p key={v}>{`• ${v}`}</p>;
+          return (
+            <span className={`flex flex-row gap-4`} key={v}>
+              <p>•</p>
+              <p>{`${v}`}</p>
+            </span>
+          );
         })}
       </div>
       <div className={"flex flex-row justify-center gap-4"}>
