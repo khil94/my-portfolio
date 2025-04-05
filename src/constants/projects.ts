@@ -120,4 +120,26 @@ export const PROJECT_LIST: Project[] = [
       "projects/portfolio/contact_section.png",
     ],
   },
+  {
+    name: "유튜브 영상 요약",
+    description: "바이브 코딩으로 만든 유튜브 영상요약 사이트",
+    content: `최근 핫한 cursor를 통해 바이브 코딩으로 만든 서비스입니다. cursor의 도움을 듬뿍받아 단기간에 서비스를 만드는 것이 가능할까 하는 호기심에 시작한 프로젝트 입니다.
+    
+    실제로 대부분의 기능과 디자인의 완성은 3~4시간여만에 끝났습니다만, 배포를 하기에 앞서 유튜브의 자막을 긁어오는 js 라이브러리인 youtube-transcript 가 배포환경에서는 차단되는 문제가 있어 배포에 이르지는 못하였습니다. 
+    
+    cursor의 기능을 충분히 활용했지만, 사용자가 직접 지적해줘야 하는 문제가 계속 발생하는 부분이나, 같은 문제를 빙글빙글 도는 문제가 발생하는 등 사용자가 실제 사용되는 기술에 대한 이해가 없으면 활용이 어려워 보였습니다.
+    
+    또 다른 문제로는 너무 cursor ai에 의존하면 코드의 흐름을 따라가기 힘들 수 있다는 점도 느껴졌습니다. 결국 도중에 코드를 직접 파악하는 과정을 거치지 않을 수 없었습니다.
+    
+    그러나 단기간 사용한 것 만드으로도 압도적인 개발 효율성의 향상을 체감할 수 있었습니다. 따라서 개발자가 실 환경에서 사용할 경우에는 직접 개발을 하던 도중 막히는 부분에 대해서 cursor를 쓰면 엄청난 효과를 보일 것으로 기대되는 기술이었다고 생각합니다.    
+    `,
+    summary: [
+      `유튜브 영상 내용을 요약하나늣 서비스`,
+      `cursor 를 통한 바이브 코딩의 시험작`,
+      `라이브러리 문제로 배포는 하지 않음`,
+    ],
+    thumbnail: "projects/portfolio/thumbnail.png",
+    skills: ["Next", "Typescript", "Tailwind", "React", "Cursor"],
+    image: ["projects/youtube-summary/main.png", "projects/youtube-summary/detail.png"],
+  },
 ];
